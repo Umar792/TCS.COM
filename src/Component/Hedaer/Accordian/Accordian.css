@@ -1,0 +1,33 @@
+.Accordian{
+    /* border: 2px solid red; */
+    overflow: auto;
+}
+.question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    margin-bottom: 15px;
+    border-bottom:  1px solid gray;
+}
+.question h3{
+    font-weight: 300;
+}
+.question h3,p{
+    cursor: pointer;
+}
+.question p{
+    font-size: 20px;
+}
+.menus_accordian ul{
+    list-style: none;
+}
+.menus_accordian ul li{
+    padding: 8px 5px;
+    margin-bottom: 5px;
+    border-bottom:  1px solid gray;
+    cursor: pointer;
+}
+.menus_accordian ul li:hover{
+    background-color: rgba(0, 0, 0, .3);
+}

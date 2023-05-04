@@ -1,0 +1,129 @@
+.blog{
+    margin: 100px 0px;
+    padding: 10px 0px 10px 30px;
+    width: 100%;
+}
+.blog .heading{
+    margin: 15px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+}
+.all_blogs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+}
+.all_blogs img{
+    max-width: 100%;
+    height: 100%;
+    opacity: .4;
+    border-radius: 10px;
+    box-shadow: inset 0px 45px 10px -10px black, inset 0px -45px 10px -10px black;
+    
+}
+.blog_data{
+    position: relative;
+}
+
+.b_content{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.b_content h2{
+    font-weight: 600;
+    padding: 10px 5px;
+}
+.b_content p{
+    padding: 10px 5px;
+    color: #E71372;
+}
+.tcs{
+    margin: 50px 0px;
+    padding: 10px 50px;
+}
+.tcs h2{
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+.tcs_content{
+    position: relative;
+    width: 100%;
+    height: 450px;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+.tcs_content h4{
+    max-width: 400px;
+    letter-spacing: 2px;
+    font-size: 30px;
+    font-weight: 400;
+}
+.tcs_content button{
+    margin-top: 15px;
+    background: transparent;
+    border-radius: 6.25rem;
+    border: 1px solid #5e6162;
+    font-size: 1.125rem;
+    color: white;
+    letter-spacing: .03125rem;
+    padding: 9pt 2pc;
+    font-family: Basis-regular;
+    -webkit-transition: border .5s;
+    transition: border .5s;
+    cursor: pointer;
+
+
+
+}
+.tcs_content::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    /* opacity: .2; */
+    box-shadow: inset 400px 0px 50px 0px rgba(0, 0, 0, .6);
+    z-index: -1;
+    background: url("https://s7ap1.scene7.com/is/image/TCSCOMprod/scientist:Medium?wid=900&hei=680&dpr=off") no-repeat center center/cover;
+}
+
+
+@media(max-width : 780px){
+    .tcs{
+        padding: 10px 0px;
+    }
+    .blog{
+        padding: 10px 0px 10px 0px;
+
+    }
+    .tcs_content{
+        padding-top: 220px;
+        padding-left: 10px;
+    }
+}
+@media(max-width : 650px){
+    .all_blogs{
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 0px 10px;
+    }
+}
+@media(max-width : 400px){
+    .tcs_content h4{
+        font-size: 22px;
+    }
+    .tcs_content button{
+       border: 2px solid black;
+    
+    
+    
+    }
+    .all_blogs h2{
+        font-size: 20px;
+        padding: 0px 5px;
+    }
+}

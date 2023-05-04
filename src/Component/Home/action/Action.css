@@ -1,0 +1,54 @@
+.action{
+    margin: 100px 0px;
+    width: 93%;
+    margin-left: 30px;
+}
+.action h1{
+    font-weight: 400;
+    margin: 20px 0px;
+    padding: 10px;
+}
+.action img{
+  
+    width: 97%;
+    opacity: .5;
+}
+.action_carosal_cild{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+}
+.actiobn_content{
+    position: absolute;
+    bottom: 5px;
+    left: 30px;
+    width: 300px;
+}
+.actiobn_content h2{
+    margin: 10px 0px;
+}
+.actiobn_content button{
+    font-family: Basis-bold;
+    background: linear-gradient(102.57deg,#dc0916,#f41fd6 100%,#f41fd6 0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    font-size: .875rem;
+    line-height: 1.5rem;
+    letter-spacing: .15em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 10px 0px;
+}
+
+
+@media(max-width : 780px){
+    .action{
+        margin: 100px 0px;
+        padding-top: 120px;
+    }
+}

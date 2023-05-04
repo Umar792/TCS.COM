@@ -1,0 +1,28 @@
+.footer{
+    margin-top: 100px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 30px;
+}
+.footer_image img{
+    width: 200px;
+}
+.footer p{
+    margin: 10px 2px;
+    width: 200px;
+}
+.footer p:hover{
+    text-decoration: underline;
+    font-size: 16.2px;
+   
+}
+
+@media(max-width : 780px){
+
+    .footer{
+        padding-top: 120px;
+    }
+}
